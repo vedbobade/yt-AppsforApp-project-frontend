@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/vedbobade/yt-AppsforApp-project-frontend.git
     targetRevision: HEAD
-    path: .
+    path: manifests-fe
   
   destination:
     server: https://kubernetes.default.svc
