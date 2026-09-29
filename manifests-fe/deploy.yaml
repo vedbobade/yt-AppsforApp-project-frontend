@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: frontend-deployment
+  namespace: yt-project-appsforapp-ns
+
+spec:
+  replicas: 1
+  selector: 
+    matchLabels:
+      app: fe
+  
+  template:
+    metadata:
+      labels:
+        app: fe
+  
+  spec: 
+    containers: 
+    - name: frontend-docker-image
+      image: vedbobade/appsforapp-yt-project-frontend:latest
+      imagePillPolicy: Always
+      ports:
+        - containerPort: 4000
+
