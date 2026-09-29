@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/vedbobade/yt-AppsforApp-project-frontend.git
     targetRevision: HEAD
-    path: yt-project-frontend
+    path: .
   
   destination:
     server: https://kubernetes.default.svc
