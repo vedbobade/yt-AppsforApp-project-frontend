@@ -20,7 +20,7 @@ spec:
     containers: 
     - name: frontend-docker-image
       image: vedbobade/appsforapp-yt-project-frontend:latest
-      imagePillPolicy: Always
+      imagePullPolicy: Always
       ports:
         - containerPort: 4000
 
